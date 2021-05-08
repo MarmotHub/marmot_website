@@ -32,22 +32,22 @@ export default function TokendistSection() {
         <GridItem xs={12} sm={12} md={12}>
           <h2 className={classes.mainTitle}>Token Distribution</h2>
           <h5 className={classes.mainDescription}>
-            Parapara values the inclusiveness and equality in decentralization,
+            Marmot values the inclusiveness and equality in decentralization,
             thus token distribution will be using the fair launch model; no pre-sale,
             no VC allocation, and open access for everyone.
             <br/>
-            A total of 10 million PARA tokens will be issued.
+            A total of 10 million MARMOT tokens will be issued.
           </h5>
         </GridItem>
       </GridContainer>
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={12}>
-            <li className={classes.description} style={{paddingBottom:"1rem", fontFamily: "Roboto",}}><strong>An initial supply of 1million (10%)</strong> PARA tokens will be deposited to Uniswap
+            <li className={classes.description} style={{paddingBottom:"1rem", fontFamily: "Roboto",}}><strong>An initial supply of 1million (10%)</strong> MARMOT tokens will be deposited to Uniswap
               to bootstrap the initial distribution. The team will not remove any liquidity before project launch on mainnet.</li>
-            <li className={classes.description} style={{paddingBottom:"1rem", fontFamily: "Roboto",}}><strong>1.5million (15%)</strong> PARA tokens are reserved for the team.
+            <li className={classes.description} style={{paddingBottom:"1rem", fontFamily: "Roboto",}}><strong>1.5million (15%)</strong> MARMOT tokens are reserved for the team.
               This portion will only be issued after the mainnet launch with 2-4 years vesting.</li>
-            <li className={classes.description} style={{paddingBottom:"1rem", fontFamily: "Roboto"}}><strong>7.5million (75%)</strong> PARA tokens are reserved for community members to incentive liquidity providers,
+            <li className={classes.description} style={{paddingBottom:"1rem", fontFamily: "Roboto"}}><strong>7.5million (75%)</strong> MARMOT tokens are reserved for community members to incentive liquidity providers,
               traders, stakers and community developers who participate in the Parapara project.
               As Parapara transitions to community governance, distribution of ecosystem rewards will be decided by the community.</li>
           </GridItem>

@@ -25,22 +25,22 @@ export default function HowtoworkSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={12}>
-          <h2 className={classes.mainTitle}>How does Parapara work</h2>
+          <h2 className={classes.mainTitle}>How does Marmot work</h2>
         </GridItem>
       </GridContainer>
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={6}>
             <h4 className={classes.title}>Long/Short with traders</h4>
-            <p className={classes.description}>Parapara introduces AMM, i.e. liquidity pools, into derivative trading.
-              But unlike other DEXs, Parapara's AMM does not conduct token exchanges, but long/short with traders.
+            <p className={classes.description}>Marmot introduces AMM, i.e. liquidity pools, into derivative trading.
+              But unlike other DEXs, Marmot's AMM does not conduct token exchanges, but long/short with traders.
               Liquidity pools are composed of USD stable coins. Whenever a trader open a position,
               the AMM will use the funds as margin to open the opposite position as the counterparty.
               After the trader closes the position, AMM will also close positions and settle profit with the trader.</p>
             <h4 className={classes.title}>Pricing formula</h4>
-            <p className={classes.description}>Parapara uses an optimized pricing formula to determine the effective price for each trade.
+            <p className={classes.description}>Marmot uses an optimized pricing formula to determine the effective price for each trade.
               Specifically, the pricing formula is composed of the current mark price provided by the oracle,
-              and virtual token pair balances. Parapara actively adjusts the price to align with the oracle price,
+              and virtual token pair balances. Marmot actively adjusts the price to align with the oracle price,
               meanwhile allowing dynamic price fluctuation with demand.</p>
             <br />
               <Button
@@ -50,7 +50,7 @@ export default function HowtoworkSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{float:"left"}}
-              >Learn More about How PARAPARA works
+              >Learn More about How Marmot works
               </Button>
             <br />
           </GridItem>

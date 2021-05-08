@@ -15,7 +15,7 @@ import Menu from "@material-ui/icons/Menu";
 // core components
 import Button from "components/CustomButtons/Button.js";
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
-import paralogo from "assets/img/logo/parapara_single.png";
+import marmotLogo from "assets/img/logo/marmotLogo.png";
 const useStyles = makeStyles(styles);
 
 export default function Header(props) {
@@ -63,11 +63,12 @@ export default function Header(props) {
   });
 
     // const brandComponent = <Button className={classes.title}>{brand}</Button>;
-  const brandComponent = <Button className={classes.title} color="transparent"><img src={paralogo} alt="logo" style={{maxHeight:"2.5em"}}></img>
+  const brandComponent = <Button className={classes.title} color="transparent">
+    <img src={marmotLogo} alt="logo" style={{maxHeight:"5em"}}></img>
     <h1 style={{textDecoration: "none",  fontWeight: "700",
       display: "inline-block", position: "relative", marginLeft:"5%", marginTop: "5%", marginBottom: "5%", minHeight: "32px",
        fontSize: "200%", fontFamily: "Aharoni", color:"#548ff7"}}>
-      parapara
+      Marmot Finance
     </h1>
     </Button>;
 
