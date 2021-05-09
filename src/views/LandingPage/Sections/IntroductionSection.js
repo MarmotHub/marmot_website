@@ -25,7 +25,7 @@ export default function IntroductionSection() {
         <GridItem xs={12} sm={12} md={12}>
           <h2 className={classes.mainTitle}>What is Marmot Finance</h2>
           <h5 className={classes.mainDescription}>
-            Marmot aims to build the most inclusive on-chain perpetual swap exchange and provide permissionless
+            Marmot Fi. aims to build the most inclusive on-chain perpetual swap exchange and provide permissionless
             access to virtually any asset.
 
           </h5>
@@ -37,8 +37,8 @@ export default function IntroductionSection() {
             <img src={whatispara} alt="..." className={imageClasses} style={{paddingTop:"2em"}} />
           </GridItem>
           <GridItem xs={12} sm={12} md={6}>
-            <h4 className={classes.title}>10x Leverage Perpetual Contract</h4>
-            <p className={classes.description}>Traders can trade with up to 10x leverage long or short.
+            <h4 className={classes.title}>20x Leverage Perpetual Contract</h4>
+            <p className={classes.description}>Traders can trade with up to 20x leverage long or short.
               With integration of price feeds from oracles, Marmot is set to provide perpetual contracts for all kinds of underlying asset,
               including cryptos, commodities, major ETFs and selected stocks.</p>
             <h4 className={classes.title}>10x Better Liquidity</h4>

@@ -59,12 +59,43 @@ const headerStyle = {
     "@media (min-width: 1450px)": {
     maxWidth: "1377px"
     },
+    "@media (min-width: 1780px)": {
+    maxWidth: "1720px"
+    },
+    "@media (min-width: 2050px)": {
+    maxWidth: "2000px"
+    },
     minHeight: "50px",
     flex: "1",
     alignItems: "center",
     justifyContent: "space-between",
     display: "flex",
     flexWrap: "nowrap"
+  },
+  titleSize: {
+    textDecoration: "none",
+    fontWeight: "700",
+    display: "inline-block",
+    position: "relative",
+    marginLeft:"5%",
+    marginTop: "2%",
+    marginBottom: "2%",
+    minHeight: "32px",
+    fontSize: "10vw",
+    fontFamily: "Aharoni",
+    color:"#5474bc",
+    "@media (min-width: 576px)": {
+      fontSize: "10vw",
+    },
+    "@media (min-width: 768px)": {
+      fontSize: "8vw",
+    },
+    "@media (min-width: 992px)": {
+      fontSize: "4vw",
+    },
+    "@media (min-width: 1200px)": {
+      fontSize: "4vw",
+    }
   },
   flex: {
     flex: 1

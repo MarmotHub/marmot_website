@@ -7,7 +7,7 @@ import classNames from "classnames";
 // material-ui core components
 import { List, ListItem } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { Twitter, GitHub, Telegram } from "@material-ui/icons";
+import {Twitter, GitHub, Telegram, Apps} from "@material-ui/icons";
 import MediumIcon from "components/Logo/Medium.js";
 import styles from "assets/jss/material-kit-react/components/footerStyle.js";
 import Button from "components/CustomButtons/Button.js";
@@ -21,10 +21,7 @@ export default function Footer(props) {
     [classes.footer]: true,
     [classes.footerWhiteFont]: whiteFont
   });
-  const aClasses = classNames({
-    [classes.a]: true,
-    [classes.footerWhiteFont]: whiteFont
-  });
+
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
@@ -72,8 +69,8 @@ export default function Footer(props) {
             </ListItem>
           </List>
         </div>
-        <div className={classes.right} style={{color:"white"}}>
-          Parapara &copy; {1900 + new Date().getYear()}
+        <div className={classes.right} style={{color:"#303f64"}}>
+          Marmot Finance &copy; {1900 + new Date().getYear()}
         </div>
       </div>
     </footer>

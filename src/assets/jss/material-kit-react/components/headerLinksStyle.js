@@ -6,6 +6,7 @@ const headerLinksStyle = theme => ({
   list: {
     ...defaultFont,
     fontSize: "14px",
+    height: "100%",
     margin: 0,
     paddingLeft: "0",
     listStyle: "none",
@@ -41,7 +42,7 @@ const headerLinksStyle = theme => ({
     position: "relative",
     padding: "0.9375rem",
     fontWeight: "400",
-    fontSize: "12px",
+    fontSize: "16px",
     textTransform: "uppercase",
     borderRadius: "3px",
     lineHeight: "20px",
@@ -91,8 +92,8 @@ const headerLinksStyle = theme => ({
     backgroundColor: "rgba(255, 255, 255, 0.1)"
   },
   icons: {
-    width: "20px",
-    height: "20px",
+    minWidth: "25px",
+    minHeight: "25px",
     marginRight: "3px"
   },
   socialIcons: {

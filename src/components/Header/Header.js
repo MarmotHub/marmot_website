@@ -64,11 +64,9 @@ export default function Header(props) {
 
     // const brandComponent = <Button className={classes.title}>{brand}</Button>;
   const brandComponent = <Button className={classes.title} color="transparent">
-    <img src={marmotLogo} alt="logo" style={{maxHeight:"5em"}}></img>
-    <h1 style={{textDecoration: "none",  fontWeight: "700",
-      display: "inline-block", position: "relative", marginLeft:"5%", marginTop: "5%", marginBottom: "5%", minHeight: "32px",
-       fontSize: "200%", fontFamily: "Aharoni", color:"#548ff7"}}>
-      Marmot Finance
+    <img src={marmotLogo} alt="logo" style={{maxHeight:"6em"}}></img>
+    <h1 className={classes.titleSize}>
+
     </h1>
     </Button>;
 
