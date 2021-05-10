@@ -29,7 +29,7 @@ export default function Footer(props) {
           <List className={classes.list}>
             <ListItem className={classes.listItem}>
               <Button
-                href="https://medium.com/@paraproject"
+                href="https://marmotfinance.medium.com/"
                 color="transparent"
                 target="_blank"
                 className={classes.navLink}
@@ -39,7 +39,7 @@ export default function Footer(props) {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Button
-                href="https://github.com/ParaParaProject"
+                href="https://github.com/MarmotHub"
                 color="transparent"
                 target="_blank"
                 className={classes.navLink}
@@ -59,7 +59,7 @@ export default function Footer(props) {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Button
-                href="https://twitter.com/parapara_proj"
+                href="https://twitter.com/marmot_finance"
                 color="transparent"
                 target="_blank"
                 className={classes.navLink}
