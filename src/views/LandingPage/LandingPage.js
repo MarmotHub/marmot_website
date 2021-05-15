@@ -52,7 +52,7 @@ export default function LandingPage(props) {
             <div style={
                 {
                     backgroundColor: "white",
-                    paddingBottom: "5%",
+                    paddingBottom: "0%",
                 }
             }>
                 {/*<div style={{*/}
@@ -90,7 +90,7 @@ export default function LandingPage(props) {
                 />
                 <div className={classes.container} style={{
                     marginTop: "4vh",
-                    height: "80vh",
+                    height: "90vh",
                     maxWidth: "2000px",
                     backgroundColor: "white",
                     backgroundImage: `url(${marmotLand})`,
@@ -150,8 +150,8 @@ export default function LandingPage(props) {
                         </GridContainer>
                     </div>
                 </div>
-
             </div>
+
             <div className={classNames(classes.main)} style={{backgroundColor: "white"}}>
                 <div className={classes.contentContainer} style={{width: "100%"}}>
                     <IntroductionSection/>
@@ -177,7 +177,7 @@ export default function LandingPage(props) {
             {/*        <RoadmapSection/>*/}
             {/*    </div>*/}
             {/*</div>*/}
-            <div className={classNames(classes.main)} style={{backgroundColor: "#fff7a5"}}>
+            <div className={classNames(classes.main)} style={{backgroundColor: "#ffffd7"}}>
                 <div className={classes.container} style={{width: "100%", color:"#303f64"}}>
                     <Footer/>
                 </div>

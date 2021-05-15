@@ -42,11 +42,10 @@ export default function IntroductionSection() {
               With integration of price feeds from oracles, Marmot is set to provide perpetual contracts for all kinds of underlying asset,
               including cryptos, commodities, major ETFs and selected stocks.</p>
             <h4 className={classes.title}>10x Better Liquidity</h4>
-            <p className={classes.description}>Marmot optimized constant product (xy=k) market makers which suffers from high slippage and impermannent loss.
-              Marmot concentrates liquidity around the mark price of the asset,
+            <p className={classes.description}>Marmot introduced PMM(proactive market maker) into derivative trading. which concentrates liquidity around the mark price of the asset,
               and incentive traders only to trade near the mark price, thus protect liquidity providers from aribitrage loss.</p>
             <h4 className={classes.title}>HODL on Derivatives </h4>
-            <p className={classes.description}>The unique design of Marmot eliminates the annoying funding payment of perpetual contracts.
+            <p className={classes.description}>The unique design of Marmot eliminates the funding payment of perpetual contracts.
               Traders ONLY need to pay one-time transaction fee, nothing else.
               Therefore traders can HODL a long position as long as it is fully collateralized, just like spot trading.</p>
           </GridItem>

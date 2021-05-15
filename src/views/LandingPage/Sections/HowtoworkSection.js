@@ -32,11 +32,11 @@ export default function HowtoworkSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={6}>
             <h4 className={classes.title}>Long/Short with traders</h4>
-            <p className={classes.description}>Marmot introduces AMM, i.e. liquidity pools, into derivative trading.
+            <p className={classes.description}>Marmot introduces market makers, i.e. liquidity pools, into derivative trading.
               But unlike other DEXs, Marmot's AMM does not conduct token exchanges, but long/short with traders.
               Liquidity pools are composed of USD stable coins. Whenever a trader open a position,
-              the AMM will use the funds as margin to open the opposite position as the counterparty.
-              After the trader closes the position, AMM will also close positions and settle profit with the trader.</p>
+              the liquidity pool will use the funds as margin to open the opposite position as the counterparty.
+              After the trader closes the position, liquidity pools will also close positions and settle profit with the trader.</p>
             <h4 className={classes.title}>Pricing formula</h4>
             <p className={classes.description}>Marmot uses an optimized pricing formula to determine the effective price for each trade.
               Specifically, the pricing formula is composed of the current mark price provided by the oracle,

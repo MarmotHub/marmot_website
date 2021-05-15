@@ -29,7 +29,7 @@ export default function HeaderLinks(props) {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://docs.marmot.finance"
+          href="https://docs.marmot.exchange"
           color="transparent"
           target="_blank"
           className={classes.navLink}
