@@ -23,7 +23,8 @@ import TokendistSection from "./Sections/TokendistSection.js";
 import RoadmapSection from "./Sections/RoadmapSection.js";
 import IntroductionSection from "./Sections/IntroductionSection.js";
 import HowtoworkSection from "./Sections/HowtoworkSection.js";
-
+import WhyMarmot from "./Sections/WhyMarmot";
+import HowToParticipate from "./Sections/HowToParticipate.js";
 import marmotLand from "../../assets/img/logo/marmot_land.png"
 import {container} from "../../assets/jss/material-kit-react";
 
@@ -42,7 +43,7 @@ export default function LandingPage(props) {
     return (
         <div>
             <Helmet>
-                <title>Marmot Finance | Derivative DEX for Any Asset</title>
+                <title>Marmot Finance | For Perpetual Derivatives</title>
             </Helmet>
             {/*<Helmet>*/}
             {/*    <style>{'body { background-color: black; }'}</style>*/}
@@ -126,7 +127,7 @@ export default function LandingPage(props) {
 
                             <GridItem xs={12} sm={12} md={12}>
                                 <h1 className={classes.contentSize}>
-                                    a decentralized way to gain exposure to any asset.
+                                    Universal Protocol for Perpetual Derivatives
                                 </h1>
                                 <br/>
                                 <div style={{
@@ -154,19 +155,31 @@ export default function LandingPage(props) {
 
             <div className={classNames(classes.main)} style={{backgroundColor: "white"}}>
                 <div className={classes.contentContainer} style={{width: "100%"}}>
-                    <IntroductionSection/>
+                    <WhyMarmot/>
                 </div>
             </div>
-            <div className={classNames(classes.main)} style={{backgroundColor: "#ffffd7"}}>
-                <div className={classes.container} style={{width: "100%"}}>
-                    <HowtoworkSection/>
-                </div>
-            </div>
+
             <div className={classNames(classes.main)} style={{backgroundColor: "white"}}>
-                <div className={classes.container} style={{width: "100%"}}>
-                    <TokenintroSection/>
+                <div className={classes.contentContainer} style={{width: "100%"}}>
+                    <HowToParticipate/>
                 </div>
             </div>
+
+            {/*<div className={classNames(classes.main)} style={{backgroundColor: "white"}}>*/}
+            {/*    <div className={classes.contentContainer} style={{width: "100%"}}>*/}
+            {/*        <IntroductionSection/>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+            {/*<div className={classNames(classes.main)} style={{backgroundColor: "#ffffd7"}}>*/}
+            {/*    <div className={classes.container} style={{width: "100%"}}>*/}
+            {/*        <HowtoworkSection/>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+            {/*<div className={classNames(classes.main)} style={{backgroundColor: "white"}}>*/}
+            {/*    <div className={classes.container} style={{width: "100%"}}>*/}
+            {/*        <TokenintroSection/>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
             {/*<div className={classNames(classes.main)} style={{backgroundColor: "#ffffd7"}}>*/}
             {/*    <div className={classes.container} style={{width: "100%"}}>*/}
             {/*        <TokendistSection/>*/}
