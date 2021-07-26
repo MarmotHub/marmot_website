@@ -1,0 +1,14 @@
+@media screen and (max-width: 990px) {
+  .img-1 {
+    display: none;
+  }
+  .img-2 {
+    display: none;
+  }
+  .img-3 {
+    display: none;
+  }
+  .img-4 {
+    display: none;
+  }
+}

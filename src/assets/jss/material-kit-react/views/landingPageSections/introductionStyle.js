@@ -4,7 +4,7 @@ import imagesStyle from "assets/jss/material-kit-react/imagesStyles.js";
 const introductionStyle = {
   section: {
     padding: "70px 0",
-    textAlign: "center"
+    textAlign: "center",
   },
   mainTitle: {
     ...title,
@@ -14,7 +14,7 @@ const introductionStyle = {
     marginBottom: "1rem",
     marginTop: "30px",
     minHeight: "32px",
-    textDecoration: "none"
+    textDecoration: "none",
   },
   title: {
     ...title,
@@ -22,29 +22,36 @@ const introductionStyle = {
     fontSize: "1.5rem",
     textAlign: "left",
     marginBottom: "1rem",
-    marginTop: "30px",
+    marginTop: "0",
     minHeight: "32px",
-    textDecoration: "none"
+    textDecoration: "none",
   },
   mainDescription: {
     fontFamily: "Roboto",
     fontSize: "120%",
     textAlign: "justify",
-    color: "#3C4858"
+    color: "#3C4858",
   },
   description: {
     fontFamily: "Roboto",
     fontSize: "100%",
     textAlign: "justify",
-    color: "#3C4858"
+    color: "#3C4858",
   },
   ...imagesStyle,
   itemGrid: {
     marginLeft: "auto",
-    marginRight: "auto"
+    marginRight: "auto",
   },
   justifyCenter: {
-    justifyContent: "center !important"
+    justifyContent: "center !important",
+  },
+  round: {
+    width: 144,
+    height: 144,
+    borderRadius: "50%",
+    backgroundColor: "deepskyblue",
+    margin: "auto",
   },
 };
 

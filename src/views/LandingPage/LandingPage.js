@@ -1,12 +1,12 @@
 import React from "react";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
-import {makeStyles} from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import {Helmet} from 'react-helmet'
+import { Helmet } from "react-helmet";
 // core components
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
@@ -16,6 +16,7 @@ import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
+import Grid from "@material-ui/core/Grid";
 
 // Sections for this page
 import TokenintroSection from "./Sections/TokenintroSection.js";
@@ -25,195 +26,317 @@ import IntroductionSection from "./Sections/IntroductionSection.js";
 import HowtoworkSection from "./Sections/HowtoworkSection.js";
 import WhyMarmot from "./Sections/WhyMarmot";
 import HowToParticipate from "./Sections/HowToParticipate.js";
-import marmotLand from "../../assets/img/logo/marmot_land.png"
-import {container} from "../../assets/jss/material-kit-react";
+import marmotLand from "../../assets/img/logo/marmot_land.png";
+import { container } from "../../assets/jss/material-kit-react";
+import FAQs from "./Sections/FAQs.js";
+import LearnMoreAbout from "./Sections/LearnMoreAbout.js";
 
+import "./ui.css";
 
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
 
+const LeftComponent = () => {
+  return (
+    <div>
+      <img
+        src="https://assets.website-files.com/6074773e5354390d19151475/607580aec409463a75eadbbe_Rectangle%20165.svg"
+        style={{
+          left: 0,
+          top: 520,
+          position: "absolute",
+          zIndex: 2,
+        }}
+        className="img-1"
+      />
+      <img
+        src="https://assets.website-files.com/6074773e5354390d19151475/607580ae16cb45409d624222_Rectangle%20164.svg"
+        style={{
+          left: 0,
+          top: 400,
+          position: "absolute",
+        }}
+        className="img-2"
+      />
+    </div>
+  );
+};
+
+const RightComponent = () => {
+  return (
+    <div>
+      <img
+        src="https://assets.website-files.com/6074773e5354390d19151475/60758525eb97d74e4bec6a78_Rectangle%20167.svg"
+        style={{
+          right: 0,
+          zIndex: 3,
+          top: 100,
+          position: "absolute",
+        }}
+        className="img-3"
+      />
+      <img
+        src="https://assets.website-files.com/6074773e5354390d19151475/607585259fde76de406d1ea0_Rectangle%20166.svg"
+        style={{
+          right: 0,
+          top: 220,
+          position: "absolute",
+          zIndex: 2,
+        }}
+        className="img-4"
+      />
+    </div>
+  );
+};
 
 export default function LandingPage(props) {
-    const classes = useStyles();
-    ReactGA.initialize('UA-196573876-1');
-    ReactGA.pageview('/Homepage');
-    const {...rest} = props;
-    console.log('I was triggered during render');
-    return (
-        <div>
-            <Helmet>
-                <title>Marmot Finance | For Perpetual Derivatives</title>
-            </Helmet>
-            {/*<Helmet>*/}
-            {/*    <style>{'body { background-color: black; }'}</style>*/}
-            {/*</Helmet>*/}
-            {/*<div style={{ background: `url(${background})` }}>*/}
-            {/*<div style={{ backgroundColor: "#d1fdfe"}}>*/}
-            <div style={
-                {
-                    backgroundColor: "white",
-                    paddingBottom: "0%",
-                }
-            }>
-                {/*<div style={{*/}
-                {/*    position: "absolute",*/}
-                {/*    backgroundColor: "#d1fdfe",*/}
-                {/*    height: "100%",*/}
-                {/*    top: "5%",*/}
-                {/*    left: "15%",*/}
-                {/*    right: "50%",*/}
-                {/*    zIndex: "0"*/}
-                {/*}}>*/}
-                {/*</div>*/}
-                {/*<div style={{*/}
-                {/*    position: "absolute",*/}
-                {/*    backgroundColor: "#fedcd1",*/}
-                {/*    height: "100%",*/}
-                {/*    top: "5%",*/}
-                {/*    right: "15%",*/}
-                {/*    left: "50%",*/}
-                {/*    zIndex: "0"*/}
-                {/*}}>*/}
-                {/*</div>*/}
-                <Header
-                    color="white"
-                    routes={dashboardRoutes}
-                    brand=""
-                    rightLinks={<HeaderLinks/>}
-                    // fixed
-                    // changeColorOnScroll={{
-                    //   height: 400,
-                    //   color: "white"
-                    // }}
-                    style={{paddingBottom: "5em", zIndex: "1"}}
-                    {...rest}
-                />
-                <div className={classes.container} style={{
-                    marginTop: "4vh",
-                    height: "90vh",
-                    maxWidth: "2000px",
-                    backgroundColor: "white",
-                    backgroundImage: `url(${marmotLand})`,
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center",
-                    backgroundSize: "cover",
+  const classes = useStyles();
+  ReactGA.initialize("UA-196573876-1");
+  ReactGA.pageview("/Homepage");
+  const { ...rest } = props;
+  console.log("I was triggered during render");
+  return (
+    <div>
+      <Helmet>
+        <title>
+          Marmot Finance | For Perpetual Derivatives
+        </title>
+      </Helmet>
+      {/*<Helmet>*/}
+      {/*    <style>{'body { background-color: black; }'}</style>*/}
+      {/*</Helmet>*/}
+      {/*<div style={{ background: `url(${background})` }}>*/}
+      {/*<div style={{ backgroundColor: "#d1fdfe"}}>*/}
+      <div
+        style={{
+          backgroundColor: "white",
+          paddingBottom: "0%",
+        }}
+      >
+        {/*<div style={{*/}
+        {/*    position: "absolute",*/}
+        {/*    backgroundColor: "#d1fdfe",*/}
+        {/*    height: "100%",*/}
+        {/*    top: "5%",*/}
+        {/*    left: "15%",*/}
+        {/*    right: "50%",*/}
+        {/*    zIndex: "0"*/}
+        {/*}}>*/}
+        {/*</div>*/}
+        {/*<div style={{*/}
+        {/*    position: "absolute",*/}
+        {/*    backgroundColor: "#fedcd1",*/}
+        {/*    height: "100%",*/}
+        {/*    top: "5%",*/}
+        {/*    right: "15%",*/}
+        {/*    left: "50%",*/}
+        {/*    zIndex: "0"*/}
+        {/*}}>*/}
+        {/*</div>*/}
+        <Header
+          color="white"
+          routes={dashboardRoutes}
+          brand=""
+          rightLinks={<HeaderLinks />}
+          // fixed
+          // changeColorOnScroll={{
+          //   height: 400,
+          //   color: "white"
+          // }}
+          style={{ paddingBottom: "5em", zIndex: "1" }}
+          {...rest}
+        />
+        <div
+          className={classes.container}
+          style={{
+            marginTop: "4vh",
+            height: "90vh",
+            maxWidth: "2000px",
+            backgroundColor: "white",
+            backgroundImage: `url(${marmotLand})`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }}
+        >
+          <div
+            style={{
+              width: "80%",
+              marginLeft: "10%",
+              marginRigth: "10%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <GridContainer>
+              <GridItem xs={6} sm={6} md={6}>
+                <h1
+                  className={classes.title}
+                  style={{ float: "right" }}
+                >
+                  <span className={classes.titleSize}>
+                    Marmot
+                  </span>
+                </h1>
+              </GridItem>
+              <GridItem xs={6} sm={6} md={6}>
+                <h1
+                  className={classes.title}
+                  style={{ float: "left" }}
+                >
+                  <span
+                    className={classes.titleSize}
+                    style={{
+                      color: "#e4c475",
+                    }}
+                  >
+                    Finance
+                  </span>
+                </h1>
+              </GridItem>
+              <br />
 
-                }}>
-                    <div style={{
-                            width: '80%',
-                            marginLeft: "10%",
-                            marginRigth: "10%",
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
-                        }}>
-                        <GridContainer>
-                            <GridItem xs={6} sm={6} md={6}>
-                                <h1 className={classes.title}
-                                    style={{float: "right"}}>
-                                    <span className={classes.titleSize}>Marmot</span>
-                                </h1>
-                            </GridItem>
-                            <GridItem xs={6} sm={6} md={6}>
-                                <h1 className={classes.title}
-                                    style={{float: "left"}}>
-                                    <span className={classes.titleSize} style={{
-                                        color: "#e4c475",
-                                    }}>Finance</span>
-                                </h1>
-                            </GridItem>
-                            <br/>
-
-                            <GridItem xs={12} sm={12} md={12}>
-                                <h1 className={classes.contentSize}>
-                                    Universal Protocol for Perpetual Derivatives
-                                </h1>
-                                <br/>
-                                <div style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                    justifyContent: "center",
-                                }}>
-                                    <Button
-                                        size="lg"
-                                        href="https://app.marmot.exchange"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        justify="center"
-                                    >
-                                        <i className="fas fa-play"/>
-                                        LAUNCH APP
-                                    </Button>
-                                </div>
-                                <br/>
-                            </GridItem>
-                        </GridContainer>
-                    </div>
+              <GridItem xs={12} sm={12} md={12}>
+                <h1 className={classes.contentSize}>
+                  Universal Protocol for Perpetual
+                  Derivatives
+                </h1>
+                <br />
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Button
+                    size="lg"
+                    href="https://app.marmot.exchange"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    justify="center"
+                  >
+                    <i className="fas fa-play" />
+                    LAUNCH APP
+                  </Button>
                 </div>
-            </div>
-
-            <div className={classNames(classes.main)} style={{backgroundColor: "white"}}>
-                <div className={classes.contentContainer} style={{width: "100%"}}>
-                    <WhyMarmot/>
-                </div>
-            </div>
-
-            <div className={classNames(classes.main)} style={{backgroundColor: "white"}}>
-                <div className={classes.contentContainer} style={{width: "100%"}}>
-                    <HowToParticipate/>
-                </div>
-            </div>
-
-            {/*<div className={classNames(classes.main)} style={{backgroundColor: "white"}}>*/}
-            {/*    <div className={classes.contentContainer} style={{width: "100%"}}>*/}
-            {/*        <IntroductionSection/>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-            {/*<div className={classNames(classes.main)} style={{backgroundColor: "#ffffd7"}}>*/}
-            {/*    <div className={classes.container} style={{width: "100%"}}>*/}
-            {/*        <HowtoworkSection/>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-            {/*<div className={classNames(classes.main)} style={{backgroundColor: "white"}}>*/}
-            {/*    <div className={classes.container} style={{width: "100%"}}>*/}
-            {/*        <TokenintroSection/>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-            {/*<div className={classNames(classes.main)} style={{backgroundColor: "#ffffd7"}}>*/}
-            {/*    <div className={classes.container} style={{width: "100%"}}>*/}
-            {/*        <TokendistSection/>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-            {/*<div className={classNames(classes.main)} style={{backgroundColor: "white"}}>*/}
-            {/*    <div className={classes.container} style={{width: "100%"}}>*/}
-            {/*        <RoadmapSection/>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-            <div className={classNames(classes.main)} style={{backgroundColor: "#ffffd7"}}>
-                <div className={classes.container} style={{width: "100%", color:"#303f64"}}>
-                    <Footer/>
-                </div>
-            </div>
+                <br />
+              </GridItem>
+            </GridContainer>
+          </div>
         </div>
-    );
+      </div>
+
+      <div
+        className={classNames(classes.main)}
+        style={{
+          backgroundColor: "white",
+          position: "relative",
+        }}
+      >
+        <div
+          className={classes.contentContainer}
+          style={{ width: "100%" }}
+        >
+          <WhyMarmot />
+        </div>
+        <LeftComponent />
+      </div>
+
+      <div
+        className={classNames(classes.main)}
+        style={{ backgroundColor: "white" }}
+      >
+        <div
+          className={classes.contentContainer}
+          style={{ width: "100%" }}
+        >
+          <HowToParticipate />
+        </div>
+      </div>
+
+      <div
+        className={classNames(classes.main)}
+        style={{
+          backgroundColor: "white",
+          position: "relative",
+        }}
+      >
+        <div
+          className={classes.contentContainer}
+          style={{ width: "100%" }}
+        >
+          <FAQs />
+        </div>
+        <RightComponent />
+      </div>
+
+      <div
+        className={classNames(classes.main)}
+        style={{ backgroundColor: "white" }}
+      >
+        <div className={classes.contentContainer}>
+          <LearnMoreAbout />
+        </div>
+      </div>
+
+      {/*<div className={classNames(classes.main)} style={{backgroundColor: "white"}}>*/}
+      {/*    <div className={classes.contentContainer} style={{width: "100%"}}>*/}
+      {/*        <IntroductionSection/>*/}
+      {/*    </div>*/}
+      {/*</div>*/}
+      {/*<div className={classNames(classes.main)} style={{backgroundColor: "#ffffd7"}}>*/}
+      {/*    <div className={classes.container} style={{width: "100%"}}>*/}
+      {/*        <HowtoworkSection/>*/}
+      {/*    </div>*/}
+      {/*</div>*/}
+      {/*<div className={classNames(classes.main)} style={{backgroundColor: "white"}}>*/}
+      {/*    <div className={classes.container} style={{width: "100%"}}>*/}
+      {/*        <TokenintroSection/>*/}
+      {/*    </div>*/}
+      {/*</div>*/}
+      {/*<div className={classNames(classes.main)} style={{backgroundColor: "#ffffd7"}}>*/}
+      {/*    <div className={classes.container} style={{width: "100%"}}>*/}
+      {/*        <TokendistSection/>*/}
+      {/*    </div>*/}
+      {/*</div>*/}
+      {/*<div className={classNames(classes.main)} style={{backgroundColor: "white"}}>*/}
+      {/*    <div className={classes.container} style={{width: "100%"}}>*/}
+      {/*        <RoadmapSection/>*/}
+      {/*    </div>*/}
+      {/*</div>*/}
+      <div
+        className={classNames(classes.main)}
+        style={{ backgroundColor: "#ffffd7" }}
+      >
+        <div
+          className={classes.container}
+          style={{ width: "100%", color: "#303f64" }}
+        >
+          <Footer />
+        </div>
+      </div>
+    </div>
+  );
 }
 
 const localStyle = {
-    titleSize: {
-        color: "#5474bc",
-        fontFamily: "Aharoni",
-        "@media (min-width: 576px)": {
-          fontSize: "10vw",
-        },
-        "@media (min-width: 768px)": {
-          fontSize: "8vw",
-        },
-        "@media (min-width: 992px)": {
-          fontSize: "4vw",
-        },
-        "@media (min-width: 1200px)": {
-          fontSize: "4vw",
-        }
-    }
-}
+  titleSize: {
+    color: "#5474bc",
+    fontFamily: "Aharoni",
+    "@media (min-width: 576px)": {
+      fontSize: "10vw",
+    },
+    "@media (min-width: 768px)": {
+      fontSize: "8vw",
+    },
+    "@media (min-width: 992px)": {
+      fontSize: "4vw",
+    },
+    "@media (min-width: 1200px)": {
+      fontSize: "4vw",
+    },
+  },
+};

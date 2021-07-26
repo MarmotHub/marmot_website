@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  padding-top: 80px;
+  transition: all 1s;
+}
+
+.box-text {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 12px;
+  padding: 24px 40px;
+  align-items: flex-start;
+  border: 1px solid hsla(0, 0%, 83.1%, 0.41);
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.box-text:hover {
+  box-shadow: 0 4px 30px 0 rgb(0 0 0 / 10%);
+}
+
+.div-block-8 {
+  margin-right: 14px;
+}
+
+.plus-icon {
+  width: 15px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.div-block-7 {
+  display: flex;
+  flex-direction: column;
+}
+
+.faqs {
+  font-size: 20px;
+  margin-top: 7px;
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.small {
+  overflow: hidden;
+  height: auto;
+  margin-bottom: 0;
+  color: #7d8790;
+  line-height: 24px;
+}
+
+.left-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 10px;
+}
+
+.right-box {
+  flex: 2;
+  padding: 0 10px;
+}
+
+.heading {
+  margin-top: 0;
+  margin-bottom: 21px;
+  font-family: "Sk modernist webfont", sans-serif;
+  color: #0d2d3f;
+  line-height: 54px;
+  font-weight: 700;
+}
+
+.paragraph0-left {
+  color: #7d8790;
+  font-size: 18px;
+  margin-bottom: 32px;
+  line-height: 27px;
+}
+
+.left-button {
+  padding: 20px 32px;
+  display: flex;
+  overflow: hidden;
+  height: 60px;
+  align-items: center;
+  border-radius: 80px;
+  background-color: #03bce4;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-lable {
+  text-transform: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+}
