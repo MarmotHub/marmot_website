@@ -30,61 +30,66 @@ import marmotLand from "../../assets/img/logo/marmot_land.png";
 import { container } from "../../assets/jss/material-kit-react";
 import FAQs from "./Sections/FAQs.js";
 import LearnMoreAbout from "./Sections/LearnMoreAbout.js";
-
-import "./ui.css";
+import leftBlue from "../../assets/img/svg/left-blue.svg";
+import rightBlue from "../../assets/img/svg/right-blue.svg";
+import leftGreen from "../../assets/img/svg/left-green.svg";
+import rightGreen from "../../assets/img/svg/right-green.svg";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
 
 const LeftComponent = () => {
+  const matches = useMediaQuery("(max-width:990px)");
   return (
     <div>
       <img
-        src="https://assets.website-files.com/6074773e5354390d19151475/607580aec409463a75eadbbe_Rectangle%20165.svg"
+        src={leftGreen}
         style={{
           left: 0,
           top: 520,
           position: "absolute",
           zIndex: 2,
+          display: matches ? "none" : "inline-block",
         }}
-        className="img-1"
       />
       <img
-        src="https://assets.website-files.com/6074773e5354390d19151475/607580ae16cb45409d624222_Rectangle%20164.svg"
+        src={leftBlue}
         style={{
           left: 0,
           top: 400,
           position: "absolute",
+          display: matches ? "none" : "inline-block",
         }}
-        className="img-2"
       />
     </div>
   );
 };
 
 const RightComponent = () => {
+  const matches = useMediaQuery("(max-width:990px)");
   return (
     <div>
       <img
-        src="https://assets.website-files.com/6074773e5354390d19151475/60758525eb97d74e4bec6a78_Rectangle%20167.svg"
+        src={rightGreen}
         style={{
           right: 0,
           zIndex: 3,
           top: 100,
           position: "absolute",
+          display: matches ? "none" : "inline-block",
         }}
-        className="img-3"
       />
       <img
-        src="https://assets.website-files.com/6074773e5354390d19151475/607585259fde76de406d1ea0_Rectangle%20166.svg"
+        src={rightBlue}
         style={{
           right: 0,
           top: 220,
           position: "absolute",
           zIndex: 2,
+          display: matches ? "none" : "inline-block",
         }}
-        className="img-4"
       />
     </div>
   );
