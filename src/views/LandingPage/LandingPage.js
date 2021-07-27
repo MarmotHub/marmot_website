@@ -100,7 +100,6 @@ export default function LandingPage(props) {
   ReactGA.initialize("UA-196573876-1");
   ReactGA.pageview("/Homepage");
   const { ...rest } = props;
-  console.log("I was triggered during render");
   return (
     <div>
       <Helmet>

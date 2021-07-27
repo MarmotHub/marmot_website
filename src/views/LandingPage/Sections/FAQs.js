@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Grid from "@material-ui/core/Grid";
 import styles from "assets/jss/material-kit-react/views/landingPageSections/introductionStyle.js";
 import { makeStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles(styles);
 
@@ -34,23 +35,21 @@ const FAQs = () => {
     <Grid container style={{ padding: "70px 0" }}>
       <Grid item xs={12} sm={12} md={4}>
         <div className={classes.leftBox}>
-          <h2 className={classes.heading}>FAQs</h2>
+          <h2 className={classes.heading}>Q&A</h2>
           <p className={classes.paragraph0Left}>
-            Get quick answers to common questions, or head
+            Some quick answers to common questions, or head
             to the documentation to learn more.
           </p>
-          <a
-            href=""
+
+          <Button
+            size="lg"
+            href="http://docs.paraproject.io/#/2_How_It_Works"
             target="_blank"
-            className={classes.leftButton}
-            style={{ marginBottom: 20 }}
-          >
-            <div className="div-block">
-              <h6 className={classes.buttonLable}>
-                Documentation
-              </h6>
-            </div>
-          </a>
+            rel="noopener noreferrer"
+            style={{float:"left", color: "#FFFFFF", backgroundColor: "#E6C476", padding: "20px"}}
+          >Documentation
+            </Button>
+
         </div>
       </Grid>
       <Grid item xs={12} sm={12} md={8}>
@@ -87,7 +86,7 @@ const Items = ({ top, detail }) => {
       <div className={classes.divBlock8}>
         <div
           style={{
-            color: "rgb(60, 234, 170)",
+            color: "#E6C476",
             fontSize: 24,
           }}
           className={classes.plusIcon}
@@ -97,7 +96,6 @@ const Items = ({ top, detail }) => {
       </div>
       <div className={classes.divBlock7}>
         <h6
-          style={{ color: "rgb(13, 45, 63)" }}
           className={classes.faqs}
         >
           {top}
