@@ -65,28 +65,42 @@ const LearnMoreAbout = () => {
       </Grid>
       <Grid item xs={8} sm={8} md={12} style={{ alignSelf: "center" }}>
         <Grid container justify="space-between">
-              <Grid container xs={12} sm={12} md={3} direction="column" alignItems="center" className={classes.learnCell} href="https://medium.com/alpaca-finance/introducing-alpaca-finance-d6e858896efd" target="blank">
+
+
+
+            <Grid item xs={12} sm={12} md={3} style={{ paddingBottom: 20 }}>
+                <a href="https://medium.com/alpaca-finance/introducing-alpaca-finance-d6e858896efd" target="blank">
+              <Grid container xs={12} sm={12} md={3} direction="column" alignItems="center" className={classes.learnCell}>
                 <img src={marmotLogo} alt="..." style={{width: 146, height: 146, color: "#5474BC",}} />
                 <span className={classes.learnCellText}>
                   Intro to Marmot Finance
                 </span>
               </Grid>
+                </a>
+            </Grid>
 
-            <a href={""}>
+
+            <Grid item xs={12} sm={12} md={3} style={{ paddingBottom: 20 }}>
+                <a href="https://medium.com/alpaca-finance/introducing-alpaca-finance-d6e858896efd" target="blank">
               <Grid container xs={12} sm={12} md={3} direction="column" alignItems="center" className={classes.learnCell}>
                 <DonutSmallIcon style={{width: 146, height: 146, color: "#5474BC",}}/>
                 <span className={classes.learnCellText}>
                   Tokenomics
                 </span>
               </Grid>
-            </a>
+                    </a>
+            </Grid>
 
+            <Grid item xs={12} sm={12} md={3} style={{ paddingBottom: 20 }}>
+                <a href="https://medium.com/alpaca-finance/introducing-alpaca-finance-d6e858896efd" target="blank">
               <Grid container xs={12} sm={12} md={3} direction="column" alignItems="center" className={classes.learnCell}>
                 <SupervisedUserCircleIcon style={{width: 146, height: 146, color: "#5474BC",}}/>
                 <span className={classes.learnCellText}>
                   Join Us
                 </span>
               </Grid>
+                </a>
+            </Grid>
 
         </Grid>
       </Grid>

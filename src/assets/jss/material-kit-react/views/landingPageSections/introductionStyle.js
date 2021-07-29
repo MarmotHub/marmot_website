@@ -161,7 +161,7 @@ const introductionStyle = {
       "0px 8px 22px -6px rgb(24 39 75 / 12%), 0px 14px 64px -4px rgb(24 39 75 / 12%)",
     borderRadius: 10,
     minHeight: 300,
-    minWidth: "30%",
+    minWidth: "100%",
   },
   learnCellText: {
     fontSize: 20,
