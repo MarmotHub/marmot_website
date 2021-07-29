@@ -156,12 +156,12 @@ const introductionStyle = {
   },
   learnCell: {
     background: "#ffffff",
-    padding: "40px 20px 40px 20px",
+    padding: "40px 20px",
     boxShadow:
       "0px 8px 22px -6px rgb(24 39 75 / 12%), 0px 14px 64px -4px rgb(24 39 75 / 12%)",
     borderRadius: 10,
-    minHeight: 300,
-    minWidth: "100%",
+    minHeight: 320,
+    minWidth:240,
   },
   learnCellText: {
     fontSize: 20,

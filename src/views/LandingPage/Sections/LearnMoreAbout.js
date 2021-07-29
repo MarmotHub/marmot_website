@@ -68,10 +68,10 @@ const LearnMoreAbout = () => {
 
 
 
-            <Grid item xs={12} sm={12} md={3} style={{ paddingBottom: 20 }}>
+            <Grid item={true} xs={12} sm={12} md={3} style={{ paddingBottom: 20 }}>
                 <a href="https://medium.com/alpaca-finance/introducing-alpaca-finance-d6e858896efd" target="blank">
-              <Grid container xs={12} sm={12} md={3} direction="column" alignItems="center" className={classes.learnCell}>
-                <img src={marmotLogo} alt="..." style={{width: 146, height: 146, color: "#5474BC",}} />
+              <Grid container={true} direction="column" alignItems="center" className={classes.learnCell}>
+                <img src={marmotLogo} alt="..." style={{width: "150px", height: "150px", color: "#5474BC",}} />
                 <span className={classes.learnCellText}>
                   Intro to Marmot Finance
                 </span>
@@ -80,10 +80,10 @@ const LearnMoreAbout = () => {
             </Grid>
 
 
-            <Grid item xs={12} sm={12} md={3} style={{ paddingBottom: 20 }}>
+            <Grid item={true} xs={12} sm={12} md={3} style={{ paddingBottom: 20 }}>
                 <a href="https://medium.com/alpaca-finance/introducing-alpaca-finance-d6e858896efd" target="blank">
-              <Grid container xs={12} sm={12} md={3} direction="column" alignItems="center" className={classes.learnCell}>
-                <DonutSmallIcon style={{width: 146, height: 146, color: "#5474BC",}}/>
+              <Grid container={true} direction="column" alignItems="center" className={classes.learnCell}>
+                <DonutSmallIcon style={{width: "150px", height: "150px", color: "#5474BC",}}/>
                 <span className={classes.learnCellText}>
                   Tokenomics
                 </span>
@@ -91,10 +91,10 @@ const LearnMoreAbout = () => {
                     </a>
             </Grid>
 
-            <Grid item xs={12} sm={12} md={3} style={{ paddingBottom: 20 }}>
+            <Grid item={true} xs={12} sm={12} md={3} style={{ paddingBottom: 20 }}>
                 <a href="https://medium.com/alpaca-finance/introducing-alpaca-finance-d6e858896efd" target="blank">
-              <Grid container xs={12} sm={12} md={3} direction="column" alignItems="center" className={classes.learnCell}>
-                <SupervisedUserCircleIcon style={{width: 146, height: 146, color: "#5474BC",}}/>
+              <Grid container={true} direction="column" alignItems="center" className={classes.learnCell}>
+                <SupervisedUserCircleIcon style={{width: "150px", height: "150px", color: "#5474BC",}}/>
                 <span className={classes.learnCellText}>
                   Join Us
                 </span>
