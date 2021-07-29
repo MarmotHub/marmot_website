@@ -4,8 +4,11 @@ import Grid from "@material-ui/core/Grid";
 import styles from "assets/jss/material-kit-react/views/landingPageSections/introductionStyle.js";
 import { makeStyles } from "@material-ui/core/styles";
 import { Apps, Twitter, GitHub, Telegram } from "@material-ui/icons";
-import handShake from "../../../assets/img/icon/handShake.png";
+import handShake from "../../../assets/img/icon/farm.png";
 import classNames from "classnames";
+import marmotLogo from "../../../assets/img/logo/marmotLogo.png"
+import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
+import DonutSmallIcon from '@material-ui/icons/DonutSmall';
 const useStyles = makeStyles(styles);
 
 const itemArray = [
@@ -62,26 +65,26 @@ const LearnMoreAbout = () => {
       </Grid>
       <Grid item xs={8} sm={8} md={12} style={{ alignSelf: "center" }}>
         <Grid container justify="space-between">
-              <Grid container xs={12} sm={12} md={3} direction="column" alignItems="center" className={classes.learnCell}>
-                <img src={handShake} alt="..." className={imageClasses} style={{paddingTop:"2em", paddingBottom:"2em"}} />
+              <Grid container xs={12} sm={12} md={3} direction="column" alignItems="center" className={classes.learnCell} href="https://medium.com/alpaca-finance/introducing-alpaca-finance-d6e858896efd" target="blank">
+                <img src={marmotLogo} alt="..." style={{width: 146, height: 146, color: "#5474BC",}} />
                 <span className={classes.learnCellText}>
-                  Intro to marmot finance
+                  Intro to Marmot Finance
                 </span>
               </Grid>
 
-
+            <a href={""}>
               <Grid container xs={12} sm={12} md={3} direction="column" alignItems="center" className={classes.learnCell}>
-                <Brightness5Icon style={{width: 146, height: 146, color: "deepskyblue",}}/>
+                <DonutSmallIcon style={{width: 146, height: 146, color: "#5474BC",}}/>
                 <span className={classes.learnCellText}>
-                  Intro to marmot finance
+                  Tokenomics
                 </span>
               </Grid>
-
+            </a>
 
               <Grid container xs={12} sm={12} md={3} direction="column" alignItems="center" className={classes.learnCell}>
-                <Apps style={{width: 146, height: 146, color: "deepskyblue",}}/>
+                <SupervisedUserCircleIcon style={{width: 146, height: 146, color: "#5474BC",}}/>
                 <span className={classes.learnCellText}>
-                  Intro to marmot finance
+                  Join Us
                 </span>
               </Grid>
 

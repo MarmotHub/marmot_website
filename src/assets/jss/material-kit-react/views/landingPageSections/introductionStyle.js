@@ -4,7 +4,6 @@ import imagesStyle from "assets/jss/material-kit-react/imagesStyles.js";
 const introductionStyle = {
   section: {
     padding: "70px 0",
-    textAlign: "center",
   },
   mainTitle: {
     ...title,
@@ -157,7 +156,7 @@ const introductionStyle = {
   },
   learnCell: {
     background: "#ffffff",
-    padding: "40px 20px",
+    padding: "40px 20px 40px 20px",
     boxShadow:
       "0px 8px 22px -6px rgb(24 39 75 / 12%), 0px 14px 64px -4px rgb(24 39 75 / 12%)",
     borderRadius: 10,
@@ -166,8 +165,8 @@ const introductionStyle = {
   },
   learnCellText: {
     fontSize: 20,
-    color: "#31c77f",
-    marginTop: 40,
+    color: "#3574BC",
+    marginTop: 20,
     fontWeight: 700,
     lineHeight: 1.45,
     textAlign: "center",

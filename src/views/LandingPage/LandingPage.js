@@ -251,7 +251,7 @@ export default function LandingPage(props) {
 
       <div
         className={classNames(classes.main)}
-        style={{ backgroundColor: "white" }}
+        style={{ backgroundColor: "#F4F4F4" }}
       >
         <div
           className={classes.contentContainer}
@@ -279,7 +279,7 @@ export default function LandingPage(props) {
 
       <div
         className={classNames(classes.main)}
-        style={{ backgroundColor: "white" }}
+        style={{ backgroundColor: "#F4F4F4" }}
       >
         <div className={classes.contentContainer}>
           <LearnMoreAbout />
@@ -301,7 +301,7 @@ export default function LandingPage(props) {
       {/*        <TokenintroSection/>*/}
       {/*    </div>*/}
       {/*</div>*/}
-      {/*<div className={classNames(classes.main)} style={{backgroundColor: "#ffffd7"}}>*/}
+      {/*<div className={classNames(classes.main)} style={{backgroundColor: "#F4F4F4"}}>*/}
       {/*    <div className={classes.container} style={{width: "100%"}}>*/}
       {/*        <TokendistSection/>*/}
       {/*    </div>*/}
@@ -313,7 +313,7 @@ export default function LandingPage(props) {
       {/*</div>*/}
       <div
         className={classNames(classes.main)}
-        style={{ backgroundColor: "#ffffd7" }}
+        style={{ backgroundColor: "white" }}
       >
         <div
           className={classes.container}

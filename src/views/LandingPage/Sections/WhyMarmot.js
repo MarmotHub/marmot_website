@@ -11,7 +11,6 @@ import Button from "@material-ui/core/Button";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/introductionStyle.js";
 import whatispara from "assets/img/whatispara.png";
-import handShake from "assets/img/icon/handShake.png"
 import altcoins from "assets/img/altcoins.png"
 import bitcoin_exchange from "assets/img/bitcoin_exchange.png"
 import blockchain from "assets/img/blockchain.png"
@@ -48,10 +47,11 @@ const Item = ({ text, detail, logo }) => {
       justify="space-between"
       alignItems="center"
       direction="row-reverse"
-      style={{ marginBottom: 20 }}
+      style={{ marginBottom: 20, backgroundColor:"#F8F8F8", minHeight:"280px", paddingLeft:"2%", paddingRight:"2%",
+        boxShadow: "0px 8px 22px -6px rgb(24 39 75 / 12%), 0px 14px 64px -4px rgb(24 39 75 / 12%)", borderRadius: 10, }}
     >
       <Grid item xs={12} sm={12} md={3}>
-        <img src={logo} alt="..." className={imageClasses} style={{paddingTop:"2em", paddingBottom:"2em"}} />
+        <img src={logo} alt="..." className={imageClasses} style={{paddingTop:"1em", paddingBottom:"1em"}} />
       </Grid>
       <Grid item xs={12} sm={12} md={8}>
         <h4 className={classes.title}>{text}</h4>
@@ -94,15 +94,6 @@ export default function IntroductionSection() {
           {itemArray.map((item, index) => {
             return <Item {...item} key={index} />;
           })}
-          <Grid item style={{ alignSelf: "start" }}>
-            <Button
-              variant="contained"
-              color="primary"
-              style={{ marginTop: 40 }}
-            >
-              新增按钮
-            </Button>
-          </Grid>
         </Grid>
       </div>
     </div>

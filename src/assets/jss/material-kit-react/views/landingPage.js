@@ -29,7 +29,7 @@ const landingPageStyle = {
       maxWidth: "860px"
     },
     "@media (min-width: 1200px)": {
-      maxWidth: "860px"
+      maxWidth: "960px"
     }
   },
   title: {
